@@ -1,7 +1,7 @@
 package validator
 
 import (
-	"app/utils"
+	"app/core/utils"
 	"errors"
 )
 

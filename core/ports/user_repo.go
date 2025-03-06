@@ -1,7 +1,7 @@
 package ports
 
 import (
-	"app/models"
+	"app/core/models"
 	"context"
 )
 

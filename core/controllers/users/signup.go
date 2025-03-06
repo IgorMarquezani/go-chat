@@ -13,9 +13,9 @@ import (
 	"app/adapters/hasher"
 	"app/adapters/storage"
 	"app/adapters/validator"
-	"app/controllers"
-	"app/models"
-	"app/ports"
+	"app/core/controllers"
+	"app/core/models"
+	"app/core/ports"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"

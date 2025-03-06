@@ -2,7 +2,7 @@ package repository
 
 import (
 	"app/adapters/database"
-	"app/models"
+	"app/core/models"
 	"context"
 
 	"gorm.io/gorm"

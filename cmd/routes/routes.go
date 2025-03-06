@@ -1,8 +1,8 @@
 package routes
 
 import (
-	"app/controllers/pages"
-	"app/controllers/users"
+	"app/core/controllers/pages"
+	"app/core/controllers/users"
 
 	"github.com/gofiber/fiber/v2"
 )

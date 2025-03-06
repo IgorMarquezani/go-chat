@@ -4,8 +4,8 @@ import (
 	"log"
 
 	"app/adapters/database"
-	"app/models"
-	"app/routes"
+	"app/cmd/routes"
+	"app/core/models"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
