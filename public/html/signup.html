@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/static/css/style.css" rel="stylesheet">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <script src="/static/js/signup.js"></script>
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-indigo-600">
+  <form id="form" class="w-full h-screen sm:h-auto sm:max-w-md bg-white shadow-xl rounded-lg p-8 " onsubmit="signUp()">
+
+    <div class="text-center mb-6">
+      <h2 class="text-3xl font-extrabold text-gray-900">Sign Up</h2>
+      <p class="text-gray-500 text-sm">Create your account to get started</p>
+    </div>
+
+    <div class="text-center">
+      <p class="text-base font-medium mb-2 text-gray-700">Profile Image</p>
+      <label class="block text-sm font-medium text-center" for="image">
+        <div id="previewContainer"
+          class="m-auto w-20 h-20 rounded-full overflow-hidden border-4 border-gray-300 flex items-center justify-center bg-gray-200 cursor-pointer">
+          <img id="imagePreview" class="w-full h-full object-cover hidden" alt="Preview">
+          <span id="plus-sign" class="text-4xl text-gray-500">+</span>
+        </div>
+        <input id="image" class="hidden" type="file" accept="image/*" name="image" required>
+      </label>
+    </div>
+
+    <div class="mt-4">
+      <label class="block text-sm font-medium text-gray-700" for="name">Name</label>
+      <input id="name"
+        class="w-full mt-1 rounded-lg border border-gray-300 p-2 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        type="text" name="name" placeholder="Your name" required>
+    </div>
+
+    <div class="mt-4">
+      <label class="block text-sm font-medium text-gray-700" for="email">Email</label>
+      <input id="email"
+        class="w-full mt-1 rounded-lg border border-gray-300 p-2 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        type="email" name="email" placeholder="Your email" required>
+    </div>
+
+    <div class="mt-4">
+      <label class="block text-sm font-medium text-gray-700" for="password">Password</label>
+      <input id="password"
+        class="w-full mt-1 rounded-lg border border-gray-300 p-2 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        type="password" name="password" placeholder="Your password" required>
+    </div>
+
+    <div class="mt-4">
+      <label class="block text-sm font-medium text-gray-700" for="password-confirmation">Confirm Password</label>
+      <input id="password-confirmation"
+        class="w-full mt-1 rounded-lg border border-gray-300 p-2 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none"
+        type="password" name="password-confirmation" placeholder="Confirm your password" required>
+    </div>
+
+    <div class="mt-6">
+      <input
+        class="w-full py-3 rounded-lg bg-blue-600 text-white font-semibold text-lg shadow-md hover:bg-blue-700 transition cursor-pointer"
+        type="submit" value="Sign Up">
+    </div>
+
+  </form>
+</body>
+<script src="/static/js/signup-listener.js"></script>
+
+</html>

@@ -1,0 +1,13 @@
+services:
+  db:
+    container_name: "chat-postgres"
+    image: postgres
+    restart: always
+    volumes:
+      - ./migration:/docker-entrypoint-initdb.d
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: root
+    ports:
+      - 5432:5432
